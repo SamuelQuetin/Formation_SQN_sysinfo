@@ -8,5 +8,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: lsla
+        run: ls -la
       - name: tentative build
-        run: make build src
+        run: make build
