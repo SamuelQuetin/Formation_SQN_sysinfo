@@ -1,0 +1,16 @@
+name: cinqWorkflow.yml
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  showinfo:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.12.12-alpine
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: installation des dépendances
+        run: pip install ifaddr psutil pylint
+      - name: exécution du test
+        run: pylint --disable=missing-docstring script/mysystem/mysystem.py
