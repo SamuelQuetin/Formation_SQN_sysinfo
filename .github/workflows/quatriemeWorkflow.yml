@@ -9,4 +9,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: tentative build
-        run: make build
+        run: make build src
