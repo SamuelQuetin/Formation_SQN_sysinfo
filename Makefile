@@ -8,7 +8,10 @@ all: lint build run
 lint: $(SRC)
 	$(CC) -fsyntax-only $(SRC)
 
-build: $(SRC) 
+bin:
+	mkdir -p bin
+
+build: bin $(SRC)
 	$(CC) $(CFLAGS) -o $(DEST) $(SRC)
 
 run: $(DEST)
