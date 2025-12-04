@@ -5,11 +5,14 @@ on:
 jobs:
   showinfo:
     runs-on: ubuntu-latest
-    container:
-      image: python:3.12
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Installation de python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
       - name: installation des dépendances
         run: pip install ifaddr psutil pylint
       - name: exécution du test
