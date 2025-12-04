@@ -3,7 +3,7 @@ on:
   push:
   workflow_dispatch:
 jobs:
-  build:
+  showinfo:
     runs-on: ubuntu-latest
     steps:
       - name: information sur la machine
