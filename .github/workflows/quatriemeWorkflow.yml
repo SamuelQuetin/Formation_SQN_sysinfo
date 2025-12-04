@@ -1,0 +1,12 @@
+name: quatriemeWorkflow.yml
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  showinfo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: tentative build
+        run: make build
