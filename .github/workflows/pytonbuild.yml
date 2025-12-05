@@ -1,6 +1,8 @@
 name: Python Cy
 on:
   push:
+    branches:
+      - 'feature/*'
     paths:
       - '**.py'
       - '.github/workflows/pytonbuild.yml'
