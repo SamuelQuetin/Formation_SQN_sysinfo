@@ -2,7 +2,7 @@ name: Python Cy
 on:
   push:
     branches:
-      - 'feature/*'
+      - 'features/*'
     paths:
       - '**.py'
       - '.github/workflows/pythonbuild.yml'
