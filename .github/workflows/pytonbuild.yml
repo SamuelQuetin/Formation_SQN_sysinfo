@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '**.py'
+      - '.github/workflows/pytonbuild.yml'
 
 jobs:
    test-python:

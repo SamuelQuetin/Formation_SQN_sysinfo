@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '**.c'
+      - '.github/workflows/Cbuild.yml'
 
 jobs:
 
@@ -39,19 +40,4 @@ jobs:
           name: test
           path: 'bin/sysinfo'
       - name: execute sysinfo
-        run: ./sysinfo
-
-        test-python:
-          runs-on: ubuntu-latest
-
-          steps:
-            - name: Checkout
-              uses: actions/checkout@v6
-            - name: Installation de python
-              uses: actions/setup-python@v6
-              with:
-                python-version: '3.13'
-            - name: installation des dépendances
-              run: pip install ifaddr psutil pylint
-            - name: exécution du test
-              run: pylint --disable=missing-docstring script/mysystem/mysystem.py
+        run: ./bin/sysinfo
