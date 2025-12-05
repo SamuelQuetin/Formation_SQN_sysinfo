@@ -47,3 +47,4 @@ jobs:
         with:
           generate_release_notes: true
           files: sysinfo-${{ github.sha}}
+          draft: false
