@@ -27,7 +27,7 @@ jobs:
       - name: sysinfo upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          path: sysinfo
+          path: bin/sysinfo
           name: sysinfo-${{ github.sha }}
   Deploy:
     needs: C-compilation-sysinfo
