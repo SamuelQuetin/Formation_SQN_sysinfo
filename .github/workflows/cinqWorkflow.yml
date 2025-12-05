@@ -20,9 +20,9 @@ jobs:
       - name: sysinfo compilation
         run: make build
       - name: lsla
-        run: ls -la ./bin
+        run: ls -la bin/sysinfo
       - name: upload artifact
         uses: actions/upload-artifact@v5
         with:
           name: test
-          path: ''
+          path: 'bin/sysinfo'
