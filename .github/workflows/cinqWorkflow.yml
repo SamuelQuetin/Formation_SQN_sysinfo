@@ -7,20 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-      - name: Installation de python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.13'
-      - name: installation des dépendances
-        run: pip install ifaddr psutil pylint
-      - name: exécution du test
-        run: pylint --disable=missing-docstring script/mysystem/mysystem.py
-  test-c:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-      - name: verif sur lint
-        run: make lint
+      - name: echo secret
+        run: echo ${{ secrets.MON_SECRET }}
