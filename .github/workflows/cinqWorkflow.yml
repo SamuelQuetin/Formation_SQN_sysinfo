@@ -36,4 +36,4 @@ jobs:
           name: test
           path: 'bin/sysinfo'
       - name: execute sysinfo
-        run: ./bin/sysinfo
+        run: ./sysinfo
