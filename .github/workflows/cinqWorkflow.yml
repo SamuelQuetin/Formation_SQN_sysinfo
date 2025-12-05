@@ -20,7 +20,7 @@ jobs:
       - name: sysinfo compilation
         run: make build
       - name: lsla
-        run: ls -la
+        run: ls -la ./bin
       - name: upload artifact
         uses: actions/upload-artifact@v5
         with:
