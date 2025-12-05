@@ -5,7 +5,7 @@ on:
       - 'feature/*'
     paths:
       - '**.py'
-      - '.github/workflows/pytonbuild.yml'
+      - '.github/workflows/pythonbuild.yml'
 jobs:
    test-python:
       runs-on: ubuntu-latest
