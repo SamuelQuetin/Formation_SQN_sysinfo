@@ -50,7 +50,7 @@ jobs:
           chmod +x sysinfo
           ./sysinfo
   Deploy:
-
+    needs: C-run-sysinfo
     runs-on: ubuntu-latest
     permissions:
       contents: write
